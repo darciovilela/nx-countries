@@ -1,6 +1,6 @@
 # NxCountries
 
-A simple search of Countries and capitals names using NX monorepo.
+A simple search of Countries and capitals names using NX monorepo, Typescript and Express
 
 ## To run:
 
