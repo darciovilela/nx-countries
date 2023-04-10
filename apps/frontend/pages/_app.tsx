@@ -7,6 +7,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Welcome to Country Search!</title>
+        <link ref="icon" type="image/png" href="globe.png"></link>
       </Head>
       <main className="app">
         <Component {...pageProps} />
