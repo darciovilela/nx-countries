@@ -37,12 +37,23 @@ const Index = () => {
       <hr className="horizontal-line"></hr>
 
       <ul>
-        {allCountries.map(({ country, city }, id) => (
-          <li key={id}>
-            {country} -{' '}
-            <span className="style-capital">{`capital: ${city}`}</span>
-          </li>
-        ))}
+        {allCountries.map(({ country, city }, id) => {
+          if (city != null) {
+            return (
+              <li key={id}>
+                {country} -{' '}
+                <span className="style-capital">{`capital: ${city}`}</span>
+              </li>
+            );
+          } else {
+            return (
+              <li key={id}>
+                {country} -{' '}
+                <span className="style-capital">{`no capital`}</span>
+              </li>
+            );
+          }
+        })}
       </ul>
     </div>
   );
