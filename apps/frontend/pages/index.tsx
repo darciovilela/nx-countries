@@ -11,7 +11,7 @@ const Index = () => {
     if (inputRef.current) {
       inputRef.current.focus();
     }
-    fetch(`http://localhost:3333/search?q=${search}`)
+    fetch(`http://localhost:3333/countries?q=${search}`)
       .then((resp) => resp.json())
       .then((data) => setAllCountries(data));
   }, [search]);

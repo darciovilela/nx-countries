@@ -14,7 +14,7 @@ app.get('/api', (req, res) => {
   res.send({ message: 'Welcome to api for countries Darcio!' });
 });
 
-app.get('/search', (req, res) => {
+app.get('/countries', (req, res) => {
   const q = ((req.query.q as string) ?? '').toLowerCase()
   res.send(allCountries.filter(({country}) => 
   country.toLowerCase().includes(q)));
